@@ -2,24 +2,29 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Projects() {
+  const handleOpenInNewTab = (e, link) => {
+    e.preventDefault(); // Prevent default navigation
+    window.open(link, "_blank", "noopener,noreferrer"); // Open in a new tab
+  };
+
   const projects = [
     {
-      title: "E-commerce Website",
-      description: "A fully responsive e-commerce site with advanced SEO techniques",
-      image: "/placeholder.svg?height=200&width=300",
-      link: "/project1", // Example internal link for React Router
+      title: "Nnine Solution Website",
+      description: "A fully responsive e-learning and IT institute site with advanced SEO techniques",
+      image: "/src/assets/n9logo.png",
+      link: "https://nnine.training/", // External link
     },
     {
-      title: "Portfolio Template",
+      title: "Personal Portfolio",
       description: "A customizable portfolio template optimized for search engines",
-      image: "/placeholder.svg?height=200&width=300",
-      link: "/project2", // Example internal link for React Router
+      image: "/src/assets/portofolio-logo.png",
+      link: "/project2", // Internal link
     },
     {
       title: "SEO Dashboard",
       description: "An interactive dashboard for tracking and improving SEO metrics",
       image: "/placeholder.svg?height=200&width=300",
-      link: "/project3", // Example internal link for React Router
+      link: "/project3", // Internal link
     },
   ];
 
@@ -30,13 +35,34 @@ function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src={project.image || "/placeholder.svg"} alt={project.title} className="w-full h-48 object-cover" />
+              <img
+                src={project.image || "/placeholder.svg"}
+                alt={project.title}
+                className="w-full h-48 object-fit"
+              />
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
-                <Link to={project.link} className="text-indigo-600 hover:underline">
-                  View Project
-                </Link>
+                {project.link.startsWith("http") ? (
+                  // Use <a> tag for external links
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-indigo-600 hover:underline"
+                  >
+                    View Project
+                  </a>
+                ) : (
+                  // Use Link with custom onClick for internal links
+                  <Link
+                    to={project.link}
+                    onClick={(e) => handleOpenInNewTab(e, project.link)}
+                    className="text-indigo-600 hover:underline"
+                  >
+                    View Project
+                  </Link>
+                )}
               </div>
             </div>
           ))}

@@ -1,4 +1,5 @@
 import React from "react";
+import ContactDetail from "./ContactDetail";
 
 function Contact() {
   return (
@@ -50,6 +51,7 @@ function Contact() {
           </button>
         </form>
       </div>
+      <ContactDetail />
     </section>
   );
 }

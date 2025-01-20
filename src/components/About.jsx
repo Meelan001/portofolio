@@ -1,4 +1,5 @@
 import React from "react"
+import CvSection from "./CvSection"
 
 function About() {
   return (
@@ -8,19 +9,25 @@ function About() {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img
-              src="/src/assets/milan.png"
+              src="/src/assets/milann.jpg"
+
               alt="John Doe"
-              className="rounded-full w-64 h-64 mx-auto"
+              className="rounded-full w-64 h-64 mx-auto object-cover"
             />
           </div>
           <div className="md:w-1/2">
             <p className="text-lg mb-4">
             Hi, I'm Milan Man Sing Khadka, a passionate frontend developer with a keen eye for design and a solid understanding of SEO principles. With 1 year of experience, I specialize in creating responsive, user-friendly websites that not only look great but also perform well in search engines.
 
-My mission is to bridge the gap between visually stunning designs and technically sound implementations, ensuring that every project I work on is both aesthetically pleasing and optimized for search engines.
+
             </p>
-            
+            <p className="text-lg mb-4">
+            My mission is to bridge the gap between visually stunning designs and technically sound implementations, ensuring that every project I work on is both aesthetically pleasing and optimized for search engines.
+            </p>
+
+            <CvSection />
           </div>
+          
         </div>
       </div>
     </section>
