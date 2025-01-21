@@ -3,8 +3,9 @@ import ContactDetail from "./ContactDetail";
 
 function Contact() {
   return (
-    <section id="contact" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="getintouch" className="py-20 bg-white">
+       
+      <div id="getintouch" className="container mx-auto px-4 ">
         <h2 className="text-3xl font-bold mb-8 text-center">Get in Touch</h2>
         <form className="max-w-lg mx-auto">
           <div className="mb-4">
@@ -51,7 +52,7 @@ function Contact() {
           </button>
         </form>
       </div>
-      <ContactDetail />
+     
     </section>
   );
 }

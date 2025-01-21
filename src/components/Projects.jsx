@@ -21,10 +21,10 @@ function Projects() {
       link: "/project2", // Internal link
     },
     {
-      title: "SEO Dashboard",
-      description: "An interactive dashboard for tracking and improving SEO metrics",
-      image: "/placeholder.svg?height=200&width=300",
-      link: "/project3", // Internal link
+      title: "chwassa jhol momo Website",
+      description: "A fully responsive food ordering website with a customer site, admin panel, and super admin panel, which is in the process of being deployed as a SaaS project..",
+      image: "/src/assets/jhol.png",
+      link: "https://jholmomo-stg.nnine.training/", // Internal link
     },
   ];
 

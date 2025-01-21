@@ -1,9 +1,11 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter } from "react-router-dom";
-import ChatButton from "./components/ChatButton";
+
 
 
 // Lazy load components
+const ChatButton=lazy(()=> import  ("./components/ChatButton"));
+const ContactDetail=lazy(()=> import ("./components/ContactDetail") );
 const Head = lazy(() => import("./components/Head"));
 const Header = lazy(() => import("./components/Header"));
 const Hero = lazy(() => import("./components/Hero"));
@@ -25,6 +27,7 @@ function App() {
           <About />
           <Skills />
           <Projects />
+          <ContactDetail />
           <Contact />
           <ChatButton />
           <Footer />

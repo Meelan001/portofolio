@@ -1,7 +1,17 @@
 import React from "react"
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
 
 const Hero = () => {
+  const handleScroll = (id) => {
+    if (id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+        
+      }
+    }
+  }
   return (
     <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-32 min-h-screen flex items-center">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center  justify-between">
@@ -24,12 +34,15 @@ const Hero = () => {
             SEO Expert
           </motion.h2>
           <p className="text-xl mb-8">Crafting beautiful, responsive, and SEO-friendly web experiences.</p>
-          <a
-            href="#contact"
-            className="bg-white text-indigo-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-colors duration-300"
-          >
-            Get in Touch
-          </a>
+          
+          <Link 
+         className="bg-white text-indigo-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-colors duration-300"
+          to="#getintouch" 
+          onClick={() => handleScroll("getintouch")} 
+          
+        >
+          Get in Touch
+        </Link>
         </div>
         <motion.div
           className="md:w-1/2"
