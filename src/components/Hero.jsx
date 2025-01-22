@@ -51,7 +51,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           <img
-            src="/public/assets/milan.jpg"
+            src="/assets/milan.jpg"
             alt="milan"
             className="rounded-full shadow-2xl border-4 border-white"
             width={400}
