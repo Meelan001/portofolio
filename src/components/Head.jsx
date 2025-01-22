@@ -18,9 +18,9 @@ function Head() {
         content="Portfolio of John Doe, a frontend developer and SEO specialist with 5 years of experience in creating responsive, user-friendly websites."
       />
       <meta property="og:image" content="/og-image.jpg" />
-      <meta property="og:url" content="https://www.johndoe.com" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <link rel="canonical" href="https://www.johndoe.com" />
+      <meta property="og:url" content="https://milanmansingkhadka.com.np/" />
+      
+      <link rel="canonical" href="https://milanmansingkhadka.com.np/" />
       <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
         rel="stylesheet"
