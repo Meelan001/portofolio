@@ -12,19 +12,19 @@ function Projects() {
     {
       title: "Nnine Solution Website",
       description: "A fully responsive e-learning and IT institute site with advanced SEO techniques",
-      image: "/public/assets/n9logo.png",
+      image: "/assets/n9logo.png",
       link: "https://nnine.training/", // External link
     },
     {
       title: "Personal Portfolio",
       description: "A customizable portfolio template optimized for search engines",
-      image: "/public/assets/portofolio-logo.png",
+      image: "/assets/portofolio-logo.png",
       link: "/project2", // Internal link
     },
     {
       title: "chwassa jhol momo Website",
       description: "A fully responsive food ordering website with a customer site, admin panel, and super admin panel, which is in the process of being deployed as a SaaS project..",
-      image: "/public/assets/jhol.png",
+      image: "/assets/jhol.png",
       link: "https://jholmomo-stg.nnine.training/", // Internal link
     },
   ];

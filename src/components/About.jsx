@@ -9,7 +9,7 @@ function About() {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img
-              src="/public/assets/milann.jpg"
+              src="/assets/milann.jpg"
 
               alt="John Doe"
               className="rounded-full w-64 h-64 mx-auto object-cover"
