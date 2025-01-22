@@ -50,7 +50,7 @@ function Skills() {
   };
 
   return (
-    <section id="skills" className="py-20 bg-gray-50">
+    <section id="skills" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">My Skills</h2>
         <Slider {...settings} ref={sliderRef}>
@@ -59,8 +59,11 @@ function Skills() {
               key={index}
               className="flex flex-col items-center  justify-center p-4 border rounded-md shadow-sm bg-white"
             >
-              <div className="text-6xl mb-4 text-indigo-600">{skill.icon}</div>
+              <div className="w-fit mx-auto ">
+              <div className="text-6xl mb-4  text-indigo-600">{skill.icon}</div>
               <p className="text-lg font-semibold text-gray-800">{skill.name}</p>
+              </div>
+             
             </div>
           ))}
         </Slider>

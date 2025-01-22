@@ -1,9 +1,41 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 function Header() {
   const [activeLink, setActiveLink] = useState("");
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScrollSpy = () => {
+      const sections = navLinks.map(link => document.getElementById(link.id));
+      
+      const getCurrentSection = () => {
+        const scrollPosition = window.scrollY + 100; // Offset for header height
+
+        for (let i = sections.length - 1; i >= 0; i--) {
+          const section = sections[i];
+          if (!section) continue;
+
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            return navLinks[i].id;
+          }
+        }
+        return "";
+      };
+
+      setActiveLink(getCurrentSection());
+    };
+
+    window.addEventListener("scroll", handleScrollSpy);
+    handleScrollSpy(); // Initial check
+
+    return () => {
+      window.removeEventListener("scroll", handleScrollSpy);
+    };
+  }, []);
 
   const handleScroll = (id) => {
     if (id) {
@@ -39,10 +71,9 @@ function Header() {
     <header className="sticky top-0 z-10 bg-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link 
-         className="text-2xl font-bold text-indigo-600"
+          className="text-2xl font-bold text-indigo-600"
           to="/" 
           onClick={() => handleScroll()} 
-          
         >
           Milan
         </Link>

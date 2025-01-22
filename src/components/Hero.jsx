@@ -14,7 +14,7 @@ const Hero = () => {
   }
   return (
     <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-32 min-h-screen flex items-center">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center  justify-between">
+      <div className="container mx-auto px-4 flex flex-col-reverse gap-10 md:gap-0 md:flex-row items-center  justify-between">
         <div className="md:w-2/3 mb-8 md:mb-0">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">Milan Man Sing Khadka</h1>
           <motion.h2

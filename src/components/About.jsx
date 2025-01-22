@@ -3,7 +3,7 @@ import CvSection from "./CvSection"
 
 function About() {
   return (
-    <section id="about" className="py-20 bg-white text-gray-900">
+    <section id="about" className="py-20 bg-gray-100 text-gray-900">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
         <div className="flex flex-col md:flex-row items-center justify-between">

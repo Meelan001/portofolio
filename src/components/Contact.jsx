@@ -3,7 +3,7 @@ import ContactDetail from "./ContactDetail";
 
 function Contact() {
   return (
-    <section id="getintouch" className="py-20 bg-white">
+    <section id="getintouch" className="py-20 bg-gray-50">
        
       <div id="getintouch" className="container mx-auto px-4 ">
         <h2 className="text-3xl font-bold mb-8 text-center">Get in Touch</h2>

@@ -6,11 +6,11 @@ function Head() {
     <Helmet>
       <title>Milan- Frontend Developer & SEO Specialist</title>
       <meta
-        name="description"
+        name="Full stack developer with a proper knowlege of frontend and backend with seo basics."
         content="Portfolio of milan man sing khadka, a frontend developer and SEO specialist with 5 years of experience in creating responsive, user-friendly websites."
       />
       <meta name="keywords" content="frontend developer, SEO specialist, web design, React, JavaScript" />
-      <meta name="author" content="John Doe" />
+      <meta name="author" content="Milan khadka" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:title" content="John Doe - Frontend Developer & SEO Specialist" />
       <meta

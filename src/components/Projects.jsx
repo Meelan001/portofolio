@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ProjectCard from "./projectCard/ProjectCard";
 
 function Projects() {
   const handleOpenInNewTab = (e, link) => {
@@ -70,9 +71,12 @@ function Projects() {
         {/* Add View All Projects button/link */}
         <div className="mt-8 text-right">
           <Link
-            to="/projects"
+            to="/all-projects"
+            
             className="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md font-medium shadow-md hover:bg-indigo-700 transition"
           >
+         
+            
             View All Projects
           </Link>
         </div>
