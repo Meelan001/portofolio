@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ProjectCard from "./components/projectCard/ProjectCard";
+
 
 // Lazy load components
 const ChatButton = lazy(() => import("./components/ChatButton"));
