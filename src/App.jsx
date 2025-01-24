@@ -2,10 +2,12 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
+
 // Lazy load components
 const ChatButton = lazy(() => import("./components/ChatButton"));
 const ContactDetail = lazy(() => import("./components/ContactDetail"));
 const Head = lazy(() => import("./components/Head"));
+const MyServices=lazy(()=> import("./components/MyServices"));
 const Header = lazy(() => import("./components/Header"));
 const Hero = lazy(() => import("./components/Hero"));
 const About = lazy(() => import("./components/About"));
@@ -26,7 +28,7 @@ function App() {
           <About />
           <Skills />
           <Projects />
-
+          {/* <MyServices /> */}
           <ContactDetail />
 
           <Contact />

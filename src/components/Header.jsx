@@ -1,3 +1,4 @@
+import { label } from "framer-motion/client";
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -64,7 +65,9 @@ function Header() {
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
     { id: "projects", label: "Projects" },
-    { id: "contact", label: "Contact" }
+    // { id:"services", label:"Services"},
+    { id: "contact", label: "Contact" },
+   
   ];
 
   return (
