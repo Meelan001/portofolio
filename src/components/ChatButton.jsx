@@ -8,7 +8,7 @@ const ChatButton = () => {
   };
 
   return (
-    <div className="fixed bottom-[90px] right-10 animate-pulse">
+    <div className="fixed bottom-[90px] right-10 animate-bounce">
       <button
         onClick={handleChatClick}
         className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg flex items-center"
